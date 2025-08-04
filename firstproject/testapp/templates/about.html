@@ -1,0 +1,17 @@
+{% extends "master.html" %}
+
+{% load testapp_tags %}
+{% block menu %}
+
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+
+{% endblock %}
+
+{% block content %}
+<h1>About Page</h1>
+<h2>{{ str | quotes }}</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, dolorum ad. Magnam expedita veniam optio enim
+  ipsum eius modi provident.</p>
+{% endblock %}

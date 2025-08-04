@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Paper</title>
+</head>
+
+<body>
+  <h1>Test Paper</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quae culpa vitae obcaecati vel porro illo autem
+    deleniti quia et vero, in, quibusdam laudantium distinctio veritatis. Optio eaque repellat quis voluptates quibusdam
+    neque mollitia quas accusantium, illo nostrum deleniti quae quo excepturi iure impedit eos veritatis. Veniam
+    repellendus maxime voluptatibus.
+  </p>
+
+  <div class="que">
+    <h2>{{que | upper}}</h2>
+  </div>
+  <div class="ques-options">
+    {% for name in options %}
+    <div><input type="radio" name="answer">{{name}}</div>
+    {% endfor %}
+  </div>
+</body>
+
+</html>
