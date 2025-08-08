@@ -17,10 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
+from chai import views as chai_views
 
 urlpatterns = [
-    path('testapp/', include('testapp.urls')),
-    path('exam/', include('exam.urls')),
 
     path('admin/', admin.site.urls),
+    # path('testapp/', include('testapp.urls')),
+    # path('exam/', include('exam.urls')),
+    path('', chai_views.home, name='home'),
+    path('about/', chai_views.about, name='about'),
+    path('contact/', chai_views.contact, name='contact')
 ]

@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Management - Home</title>
+  <link rel="stylesheet" href="{% static '/style.css' %}">
+</head>
+
+<body>
+  <nav>
+    <div class="logo">⚡ CyberCorp EMS ⚡</div>
+    <ul>
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'about' %}">About</a></li>
+      <li><a href="{% url 'contact' %}">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to <span>CyberCorp EMS</span></h1>
+      <p>Manage employees like a futuristic pro 🚀</p>
+      <a href="#" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 CyberCorp. All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>
