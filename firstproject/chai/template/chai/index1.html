@@ -1,0 +1,9 @@
+{% for chai in chais%}
+<div class="chai-item">
+  <img src="{{chai.image.url}}" alt="">
+
+  <a href="{% url 'chai_detail' chai.id %}">
+    <button>click</button>
+
+  </a>
+</div>

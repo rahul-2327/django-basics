@@ -18,13 +18,17 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
 from chai import views as chai_views
+from django.conf import settings
+from django.conf.urls.static import static
+
 
 urlpatterns = [
 
     path('admin/', admin.site.urls),
     # path('testapp/', include('testapp.urls')),
     # path('exam/', include('exam.urls')),
-    path('', chai_views.home, name='home'),
-    path('about/', chai_views.about, name='about'),
-    path('contact/', chai_views.contact, name='contact')
-]
+    # path('', chai_views.home, name='home'),
+    # path('about/', chai_views.about, name='about'),
+    # path('contact/', chai_views.contact, name='contact')
+    path('chai/', include('chai.urls'))
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
